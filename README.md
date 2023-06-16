@@ -19,6 +19,7 @@ echo Enter your Transaction ID: && read TI
 CIPHERTEXT=$(curl -s https://vm.aleo.org/api/testnet3/transaction/$TI | jq -r '.execution.transitions[0].outputs[0].value')
 
 5. Install software
+
 cd $HOME
 git clone https://github.com/AleoHQ/snarkOS.git --depth 1
 cd snarkOS
